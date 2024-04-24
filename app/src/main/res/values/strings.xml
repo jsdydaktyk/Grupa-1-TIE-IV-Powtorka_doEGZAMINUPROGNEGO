@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tests</string>
+
+    <string-array name="mojecele">
+        <item>cela w Barczewie</item>
+        <item>cela na Metalowej</item>
+        <item>cela obok Aury</item>
+    </string-array>
+</resources>
