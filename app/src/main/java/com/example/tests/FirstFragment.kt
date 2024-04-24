@@ -47,7 +47,9 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val myImage = view.findViewById<ImageView>(R.id.imageView_maja)
         myImage.setOnClickListener{
-            Log.i("maja", "klik")
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.main_container_for_fragments, SecondFragment())
+                .commit()
         }
     }
 
