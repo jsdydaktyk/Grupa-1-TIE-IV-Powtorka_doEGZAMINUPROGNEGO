@@ -20,12 +20,29 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val myList =findViewById<ListView>(R.id.mojalista)
-        val mojeCele = resources.getStringArray(R.array.mojecele)
-        var arrayAdapter = ArrayAdapter(this,
-            android.R.layout.simple_list_item_1,
-            mojeCele
-            )
-        myList.adapter=arrayAdapter
+        if(savedInstanceState == null){
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.main_container_for_fragments, FirstFragment())
+                .commit()
+        }
+
+//        var mojeCiastka = mutableListOf(
+//            "W-Z",
+//            "Kremówka",
+//            "Pączek z nadzieniem pistacjowym"
+//        )
+//
+//        val myList =findViewById<ListView>(R.id.mojalista)
+//        val mojeCele = resources.getStringArray(R.array.mojecele)
+//        var arrayAdapter = ArrayAdapter(this,
+//            android.R.layout.simple_list_item_1,
+//            mojeCele
+//            )
+//        var arrayAdapterCiatka = ArrayAdapter(this,
+//            android.R.layout.simple_list_item_1,
+//            mojeCiastka
+//        )
+//        //myList.adapter=arrayAdapter
+//        myList.adapter=arrayAdapterCiatka
     }
 }

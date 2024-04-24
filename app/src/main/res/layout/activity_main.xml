@@ -9,17 +9,36 @@
     android:orientation="vertical"
     >
 
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="To jest list"
-        android:textSize="25sp"
-        android:gravity="center"
-       />
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Moje cele"
+            app:titleTextColor="@color/white"
+            android:background="@color/metalowy"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <ListView
-        android:id="@+id/mojalista"
+    <FrameLayout
+        android:id="@+id/main_container_for_fragments"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="To jest list"-->
+<!--        android:textSize="25sp"-->
+<!--        android:gravity="center"-->
+<!--       />-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/mojalista"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
 
 </LinearLayout>
