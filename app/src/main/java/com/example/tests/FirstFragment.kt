@@ -49,6 +49,7 @@ class FirstFragment : Fragment() {
         myImage.setOnClickListener{
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.main_container_for_fragments, SecondFragment())
+                .addToBackStack(null) //możliwość cofania
                 .commit()
         }
     }
