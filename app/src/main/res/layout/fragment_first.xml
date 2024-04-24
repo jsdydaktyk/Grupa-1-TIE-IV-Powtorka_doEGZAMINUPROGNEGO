@@ -17,4 +17,15 @@
         android:gravity="center"
         android:text="fragment z Mają" />
 
+    <ImageView
+        android:id="@+id/imageView_maja"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="maja"
+        android:src="@drawable/maja"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        />
+
 </LinearLayout>
